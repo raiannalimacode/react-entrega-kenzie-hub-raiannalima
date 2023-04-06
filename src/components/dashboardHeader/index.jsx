@@ -5,7 +5,7 @@ export const DashboardHeader = () => {
     const navigate = useNavigate()
     const turnOff = () => {
         localStorage.clear();
-        navigate("/login");
+        navigate("/");
     }
 
     return (

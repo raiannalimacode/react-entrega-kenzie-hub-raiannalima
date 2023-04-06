@@ -20,7 +20,7 @@ export const FormRegister = () => {
                 autoClose: 4000,
                 theme: "dark",
             });
-            navigate("/login");
+            navigate("/");
         } catch (e) {
             toast.error('Ops! Algo deu errado', {
                 autoClose: 4000,

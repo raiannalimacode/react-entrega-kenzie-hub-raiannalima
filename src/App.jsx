@@ -16,9 +16,9 @@ function App() {
         <GlobalStyle/>
         <ToastContainer/>
         <Routes>
-          <Route path="/dashboard" element={<DashboardPage user={user}/>}/>
-          <Route path="/login" element={<LoginPage setUser={setUser}/>}/>
+          <Route path="/" element={<LoginPage setUser={setUser}/>}/>
           <Route path="/register" element={<RegisterPage/>}/>
+          <Route path="/dashboard" element={<DashboardPage user={user}/>}/>
         </Routes>
       </div>
   )
