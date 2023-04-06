@@ -9,10 +9,7 @@ import { ToastContainer } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
-  const [count, setCount] = useState(0)
   const [user, setUser] = useState(null)
-
-  //definir o usuário como estado para renderizar os dados da dashboard
 
   return (
       <div className="App">
