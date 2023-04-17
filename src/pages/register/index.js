@@ -16,6 +16,10 @@ export const StylezedContainerRegister = styled.div`
         margin: 2.4813rem 0;
     }
 
+    .btn-turn-back {
+        width: 4.2181rem;
+    }
+
     @media (max-width: 500px) {
         .register-nav {
             width: 18.4894rem;

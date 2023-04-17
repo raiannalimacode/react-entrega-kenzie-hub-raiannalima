@@ -14,9 +14,7 @@ export const StylizedHeader = styled.header`
         align-items: center;
     }
 
-    @media (max-width: 500px) {
-        div {
-            padding: 0.8125rem;
-        }
+    .header-btn-turn_off {
+        width: 4.2181rem;
     }
 `

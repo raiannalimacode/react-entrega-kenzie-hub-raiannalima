@@ -34,6 +34,7 @@ export const GlobalStyle = createGlobalStyle`
         --color-sucess: #3FE864;
         --color-negative: #E83F5B;
         --color-white: #FFFFFF;
+        --color-grey-01-shadow-01: rgba(18, 18, 20, 0.5);
 
         --font-family-01: 'Inter', sans-serif;
 
@@ -42,6 +43,10 @@ export const GlobalStyle = createGlobalStyle`
         --font-size-03: 1rem; /* 16px*/
         --font-size-04: 0.7612rem; /* 12.18px */
         --font-size-05: 0.75rem; /* 12px */
+        --font-size-06: 0.8881rem; /* 14.21px */
+        --font-size-07: 0.7612rem; /* 12.18px */
+        --font-size-08: 0.875rem; /* 14px */
+        --font-size-09: 1.015rem; /* 16.24px */
 
         --font-weight-01: 400;
         --font-weight-02: 500;
@@ -64,6 +69,20 @@ export const GlobalStyle = createGlobalStyle`
         color: var(--color-grey-05);
         font-size: var(--font-size-02);
         font-weight: var(--font-weight-04); 
+        line-height: var(--line-height-01);
+    }
+
+    .title-03 {
+        color: var(--color-white);
+        font-size: var(--font-size-06);
+        font-weight: var(--font-weight-04);
+        line-height: var(--line-height-01);
+    }
+
+    .title-04 {
+        color: var(--color-grey-05);
+        font-size: var(--font-size-08);
+        font-weight: var(--font-weight-04);
         line-height: var(--line-height-01);
     }
 
@@ -102,6 +121,20 @@ export const GlobalStyle = createGlobalStyle`
         line-height: var(--line-height-01);
     }
 
+    .text-06 {
+        color: var(--color-grey-04);
+        font-size: var(--font-size-07);
+        font-weight: var(--font-weight-01);
+        line-height: var(--line-height-01);
+    }
+
+    .text-06 {
+        color: var(--color-grey-05);
+        font-size: var(--font-size-07);
+        font-weight: var(--font-weight-01);
+        line-height: var(--line-height-01);
+    }
+
     .button-01 {
         height: 3rem;
         background-color: var(--color-primary-01);
@@ -125,7 +158,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     .button-03 {
-        width: 4.2181rem;
         height: 2.5069rem;
         background-color: var(--color-grey-02);
         color: var(--color-grey-05);
@@ -141,6 +173,41 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: var(--font-weight-02);
         font-size: var(--font-size-03);
         border-radius: var(--border-radius-01);
+    }
+
+    .button-05 {
+        height: 3rem;
+        background-color: var(--color-primary-01);
+        color: var(--color-white);
+        font-weight: var(--font-weight-02);
+        font-size: var(--font-size-03);
+        border-radius: var(--border-radius-01);
+    }
+
+    .button-05:hover {
+        background-color: var(--color-primary-01-focus);
+    }
+
+    .button-06 {
+        height: 3rem;
+        background-color: var(--color-primary-01-negative);
+        color: var(--color-white);
+        font-weight: var(--font-weight-02);
+        font-size: var(--font-size-03);
+        border-radius: var(--border-radius-01);
+    }
+
+    .button-07 {
+        height: 3rem;
+        background-color: var(--color-grey-04);
+        color: var(--color-white);
+        font-weight: var(--font-weight-02);
+        font-size: var(--font-size-03);
+        border-radius: var(--border-radius-01);
+    }
+
+    .button-07:hover {
+        background-color: var(--color-grey-03);
     }
 
     .container {

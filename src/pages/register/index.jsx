@@ -13,7 +13,7 @@ export const RegisterPage = () => {
                 <h1 className="title-01">
                     Kenzie Hub
                 </h1>
-                <button className="button-03" onClick={goBack}>
+                <button className="button-03 btn-turn-back" onClick={goBack}>
                     Voltar
                 </button>    
             </div>

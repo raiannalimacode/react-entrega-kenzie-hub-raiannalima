@@ -3,8 +3,11 @@ import { StylizedForm } from "."
 import { useNavigate } from "react-router-dom"
 import { api } from "../../services/api"
 import { toast } from "react-toastify";
+import { useContext } from "react";
+import { UserContext } from "../../providers/UserContext";
 
-export const FormLogin = ( {setUser} ) => {
+export const FormLogin = () => {
+    const { setUser } = useContext(UserContext)
     const { register , handleSubmit } = useForm();
     const navigate = useNavigate();
 
@@ -12,6 +15,7 @@ export const FormLogin = ( {setUser} ) => {
         try {
             const { data } = await api.post('/sessions', formData);
             localStorage.setItem('@tokenUser', data.token);
+            api.defaults.headers.authorization = `Bearer ${data.token}`;
             setUser(data.user);
             toast.success('Login feito com sucesso!', {
                 autoClose: 4000,

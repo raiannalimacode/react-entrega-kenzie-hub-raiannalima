@@ -14,7 +14,7 @@ export const DashboardHeader = () => {
                 <h1 className="title-01">
                     Kenzie Hub
                 </h1>
-                <button className="button-03" onClick={turnOff}>
+                <button className="button-03 header-btn-turn_off" onClick={turnOff}>
                     Sair
                 </button>
             </div>
