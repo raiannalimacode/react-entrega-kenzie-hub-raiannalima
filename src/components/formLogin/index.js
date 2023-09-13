@@ -49,5 +49,4 @@ export const StylizedForm = styled.form`
         width: 18.5rem;
         margin-bottom: 3.125rem;
     }
-
 `
